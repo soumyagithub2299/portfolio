@@ -300,6 +300,16 @@ html{
     color: rgb(7, 7, 8);
     
 }
+
+
+
+
+
+
+
+
+
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .javascript{
     width: 0%;
@@ -307,7 +317,7 @@ html{
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 77%;}
 }
 
 .skills .skill .htmlcss{
@@ -325,7 +335,7 @@ html{
 }
 @keyframes photoshop {
     0%{width: 0%;}
-    100%{width: 88%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .wordpress{
@@ -343,7 +353,7 @@ html{
 }
 @keyframes drupal {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .comunicacion{
@@ -387,12 +397,20 @@ html{
     animation: 2s proyect forwards;
 }
 
-
-
 @keyframes proyect {
     0%{width: 0%;}
     100%{width: 90%;}
 }
+
+
+
+
+
+
+
+
+
+
 /* SECCION CURRICULUM */
 .curriculum{
     background-color: #1e2326;
