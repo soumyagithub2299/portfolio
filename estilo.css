@@ -616,8 +616,8 @@ html{
     display: flex;
 }
 .contacto .col{
-    width: 70%;
-    padding: 50px;
+    width: 80%;
+    padding: 35px;
     position: relative;
 }
 
