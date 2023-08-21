@@ -766,7 +766,9 @@ footer .arriba :hover{
         display: block;
     }
     .sobremi .fila .col{
-        width: fit-content;
+        /* width: fit-content; */
+        width: 100%;
+
     }
 
     .skills .fila{
