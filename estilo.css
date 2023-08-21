@@ -757,7 +757,7 @@ footer .arriba :hover{
         display: block !important;
     }
     nav.responsive ul li{
-        border-bottom: 1px solid #fff;
+        /* border-bottom: 1px solid #fff; */
         padding: 10px 0;
     }
 }
