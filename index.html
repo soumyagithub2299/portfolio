@@ -407,15 +407,43 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Enter your name">
-                    <input type="email" placeholder="Enter your e-mail">
-                    <input type="text" placeholder="Enter your phone number">
-                    <input type="text" placeholder="Enter your subject / purpose">
-                    <textarea name="" id="" cols="4" rows="6"  placeholder="Text your message..."></textarea>
-                    <button type="submit">
+
+                    <form action="mailto:soumyatiwari7247@gmail.com" method="post" enctype="text/plain">
+
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                    <input id="email" type="email" placeholder="Enter your e-mail" required>
+                    <input id="phone" placeholder="Enter your phone number" required>
+                    <input id="purpose_subject" type="text" placeholder="Enter your subject / purpose" required>
+                    <textarea name="message" id="message" cols="3" rows="5"  placeholder="Text your message..." required></textarea>
+                    <button type="submit" val="submit">
                         <i class="fa-solid fa-paper-plane"></i>
                         SEND<span class="overlay"></span>
                     </button>
+
+                    </form>
+
+
+                    <script>
+                        const form = document.querySelector('form');
+                        form.addEventListener('submit', function (event) {
+                            const name = encodeURIComponent(document.getElementById('name').value);
+                            const email = encodeURIComponent(document.getElementById('email').value);
+                            const phone = encodeURIComponent(document.getElementById('phone').value);
+                            const purpose_subject = encodeURIComponent(document.getElementById('purpose_subject').value);
+                            const message = encodeURIComponent(document.getElementById('message').value);
+                            const mailtoLink = `mailto:soumyatiwari7247@gmail.com?subject=Contact%20Form&body=Name:%20${name}%0AEmail:%20${email}%0APhone:%20${phone}%0APurpose_Subject:%20${purpose_subject}%0AMessage:%20${message}`;
+                
+                            // Open user's email client with pre-filled email content
+                            window.location.href = mailtoLink;
+                
+                            // Prevent the default form submission
+                            event.preventDefault();
+                        });
+                    </script>
+
+
+
+
                 </div>
                 <!-- Mapa -->
                 <div class="col">
