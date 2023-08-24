@@ -78,9 +78,6 @@ html{
 .inicio .contenido-banner{
     padding: 1px;
     padding-top: 55px;
-    /* background: linear-gradient(to top, rgba(73, 78, 80, 0.8), rgb(19, 20, 22)), */
-    /* background : url(img/back_profile.png); */
-    /* background-color: #173347; */
     max-width: 500px;
     margin: auto;
     text-align: center;
